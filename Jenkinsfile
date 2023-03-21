@@ -12,15 +12,9 @@ pipeline {
 
     stage('Hello') {
 
-      steps {
-
-        sh '''
-
-          java -version
-
-        '''
-
-      }
+      steps{
+		echo "TESTE DEPLOY POR MULTIPLAS BRANCHES"
+	  }
 
     }
 
