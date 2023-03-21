@@ -15,6 +15,17 @@ pipeline {
       steps{
 		echo "TESTE DEPLOY POR MULTIPLAS BRANCHES"
 	  }
+	  
+	  stage('cat README') {
+		
+		when {
+			branch "fix-*"
+		}
+		
+		steps{
+			sh "cat README.md"
+		}
+	  }
 
     }
 
