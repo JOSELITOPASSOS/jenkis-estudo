@@ -24,7 +24,7 @@ pipeline {
 		}
 		
 		steps{
-			sh "ls"
+			echo "TESTE LER ARQUIVO." 
 		}
 	}
 
