@@ -10,14 +10,14 @@ pipeline {
 
   stages {
 
-	stage('Hello') {
+	stage('Fase 01') {
 
 		steps{
 			echo "TESTE DEPLOY POR MULTIPLAS BRANCHES"
 	  	}
     	}
 	
-	stage('cat README') {
+	stage('Fase 02') {
 		
        		when {
 			branch "fix-*"
