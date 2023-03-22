@@ -17,16 +17,7 @@ pipeline {
 	  	}
     	}
 	
-	stage('Fase 02') {
-		
-       		when {
-			branch "fix-*"
-       		}
-		
-		steps{
-			java -version
-		}
-	}
+	
 
   }
 
