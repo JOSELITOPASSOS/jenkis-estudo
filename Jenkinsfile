@@ -10,21 +10,23 @@ pipeline {
 
   stages {
 
-    stage('Hello') {
+	stage('Hello') {
 
-      steps{
-		echo "TESTE DEPLOY POR MULTIPLAS BRANCHES"
-	  }
-    }
+		steps{
+			echo "TESTE DEPLOY POR MULTIPLAS BRANCHES"
+	  	}
+    	}
 	
 	stage('cat README') {
 		
-		when {
+       		when {
 			branch "fix-*"
-		}
+       		}
 		
 		steps{
-			echo "TESTE LER ARQUIVO." 
+			sh '''
+			java -version
+			'''
 		}
 	}
 
