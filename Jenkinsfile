@@ -13,18 +13,18 @@ pipeline {
 	stage('Fase 01') {
 
 		steps{
-			echo "TESTE DEPLOY POR MULTIPLAS BRANCHES"
+			echo "PORCESSOS GERAIS - TODAS AS BRANCHES"
 	  	}
     	}
 	
 	stage('Fase 02') {
 		
        		when {
-			branch "fix-*"
+			branch "dev-*"
        		}
 		
 		steps{
-			java -version
+				echo "DEPLOY BRANCH DEVELOP"
 		}
 	}
 	
