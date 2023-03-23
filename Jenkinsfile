@@ -24,7 +24,7 @@ pipeline {
        		}
 		
 		steps{
-				echo "DEPLOY BRANCH DEVELOP"
+			echo "DEPLOY BRANCH DEVELOP"
 		}
 	}
 	
